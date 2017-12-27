@@ -25,14 +25,15 @@ public class StartApplicationGUI extends Application {
 	public void start(Stage primaryStage) throws Exception {
 
 		BorderPane root = FXMLLoader.load(getClass().getResource("views/MainView.fxml"));
-		javafx.scene.layout.GridPane details = FXMLLoader.load(getClass().getResource("views/TaskDetailView.fxml"));
+		// javafx.scene.layout.GridPane details =
+		// FXMLLoader.load(getClass().getResource("views/TaskDetailView.fxml"));
 
-		root.setCenter(details);
+		// root.setCenter(details);
 
 		// childrenList.setCenter(details);
 
 		primaryStage.setTitle("Task Manager");
-		primaryStage.setScene(new Scene(root, 700, 275));
+		primaryStage.setScene(new Scene(root, 700, 500));
 		primaryStage.show();
 	}
 	// TODO create program close
