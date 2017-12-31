@@ -120,4 +120,9 @@ public class ToDoTask {
 	public void addTaskLog(TaskLog taskLog) {
 		this.taskLogs.add(taskLog);
 	}
+	
+	@Override
+	public String toString() {
+		return description;
+	}
 }

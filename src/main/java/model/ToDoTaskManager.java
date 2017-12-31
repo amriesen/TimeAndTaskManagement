@@ -8,22 +8,11 @@ import javax.persistence.TypedQuery;
 
 public class ToDoTaskManager {
 
-	private static ToDoTaskManager instanse;
 	
-	@Deprecated
-	private EntityManager entityMgr  = Persistence.createEntityManagerFactory("taskDatabase.odb").createEntityManager();
-	
-	@Deprecated
-	public static ToDoTaskManager getInstance() {
-		if (instanse == null) {
-			instanse = new ToDoTaskManager();
-		}
-		return instanse;
-	}
-	
-	
-	public ToDoTaskManager() {
-//		entityMgr.find(null, null);
+	private EntityManager entityMgr; 
+		
+	public ToDoTaskManager(EntityManager entityMgr) {
+		this.entityMgr = entityMgr;
 	}
 	
 	public List<ToDoTask> getAllTasks(EntityManager entityManager){
