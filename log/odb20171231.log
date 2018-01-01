@@ -1,0 +1,129 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-12-31 16:29:21 #1 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' is opened by 33670@Anthonys-MacBook-Pro-2.local
+
+[2017-12-31 16:29:21 #2 store] 
+Configuration path: ?
+
+[2017-12-31 16:29:21 #3 type] 
+Type model.ToDoTask is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-12-31 16:47:20 #1 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' is opened by 34034@Anthonys-MacBook-Pro-2.local
+
+[2017-12-31 16:47:20 #2 store] 
+Configuration path: ?
+
+[2017-12-31 16:47:20 #3 type] 
+Type model.ToDoTask is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-12-31 16:47:52 #1 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' is opened by 34038@Anthonys-MacBook-Pro-2.local
+
+[2017-12-31 16:47:52 #2 store] 
+Configuration path: ?
+
+[2017-12-31 16:47:52 #3 type] 
+Type model.ToDoTask is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-12-31 16:58:57 #1 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' is opened by 34245@Anthonys-MacBook-Pro-2.local
+
+[2017-12-31 16:58:57 #2 store] 
+Configuration path: ?
+
+[2017-12-31 16:58:57 #3 type] 
+Type model.ToDoTask is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-12-31 17:20:53 #1 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' is opened by 34750@Anthonys-MacBook-Pro-2.local
+
+[2017-12-31 17:20:53 #2 store] 
+Configuration path: ?
+
+[2017-12-31 17:20:53 #3 type] 
+Type model.ToDoTask is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-12-31 17:30:51 #1 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' is opened by 34945@Anthonys-MacBook-Pro-2.local
+
+[2017-12-31 17:30:51 #2 store] 
+Configuration path: ?
+
+[2017-12-31 17:30:51 #3 type] 
+Type model.ToDoTask is not enhanced.
+
+[2017-12-31 17:30:51 #4 type.registry] 
+New type model.VisitRecord
+
+[2017-12-31 17:30:51 #5 type] 
+Type model.VisitRecord is not enhanced.
+
+[2017-12-31 17:30:51 #6 type.registry] 
+New type java.time.LocalDateTime
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-12-31 17:34:37 #1 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' has been recovered (tr. 10-10)
+
+[2017-12-31 17:34:37 #2 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' is opened by 35024@Anthonys-MacBook-Pro-2.local
+
+[2017-12-31 17:34:37 #3 store] 
+Configuration path: ?
+
+[2017-12-31 17:34:37 #4 type] 
+Type model.ToDoTask is not enhanced.
+
+[2017-12-31 17:34:37 #5 type] 
+Type model.VisitRecord is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-12-31 17:40:31 #1 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' has been recovered (tr. 11-12)
+
+[2017-12-31 17:40:31 #2 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' is opened by 35145@Anthonys-MacBook-Pro-2.local
+
+[2017-12-31 17:40:31 #3 store] 
+Configuration path: ?
+
+[2017-12-31 17:40:31 #4 type] 
+Type model.ToDoTask is not enhanced.
+
+[2017-12-31 17:40:31 #5 type] 
+Type model.VisitRecord is not enhanced.
+
+[2017-12-31 17:40:32 #6 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' is closed by 35145@Anthonys-MacBook-Pro-2.local
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-12-31 17:41:47 #1 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' is opened by 35164@Anthonys-MacBook-Pro-2.local
+
+[2017-12-31 17:41:47 #2 store] 
+Configuration path: ?
+
+[2017-12-31 17:41:47 #3 type] 
+Type model.ToDoTask is not enhanced.
+
+[2017-12-31 17:41:47 #4 type] 
+Type model.VisitRecord is not enhanced.
+
+[2017-12-31 17:41:47 #5 store] 
+Database '/Users/anthonyriesen/git/TimeAndTaskManagement/taskDatabase.odb' is closed by 35164@Anthonys-MacBook-Pro-2.local
+

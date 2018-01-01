@@ -1,12 +1,8 @@
 package views;
 
-import java.awt.TextField;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
-
-import javax.jdo.PersistenceManager;
-import javax.persistence.Persistence;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -51,17 +47,15 @@ public class GuiController implements Initializable {
 
 	@FXML
 	private GridPane detailsPane;
-	
-		
+
 	private ToDoTaskManager toDoTaskManager;
-	
-	
+
 	private ToDoTask activeTask;
-	
+
 	public GuiController(ToDoTaskManager manager) {
 		this.toDoTaskManager = manager;
 	}
-	
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 
@@ -77,19 +71,19 @@ public class GuiController implements Initializable {
 		}
 
 		taskTree.setRoot(taskTreeRoot);
-		updateDetailView(taskList.get(1));
+		activeTask = taskList.get(0);
+		updateDetailView(activeTask);
 
 		taskTree.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<TreeItem<ToDoTask>>() {
 
 			@Override
 			public void changed(ObservableValue<? extends TreeItem<ToDoTask>> observable, TreeItem<ToDoTask> oldValue,
 					TreeItem<ToDoTask> newValue) {
-					activeTask = newValue.getValue();
-					updateDetailView(newValue.getValue());
+				activeTask = newValue.getValue();
+				updateDetailView(newValue.getValue());
 			}
 		});
-		
-		
+
 		taskLabel.setOnMouseClicked(new EventHandler<Event>() {
 
 			@Override
@@ -97,31 +91,31 @@ public class GuiController implements Initializable {
 
 				// Remove the label from view
 				detailsPane.getChildren().remove(taskLabel);
-				
+
 				// Add new Textfield
 				javafx.scene.control.TextField taskEditBox = new javafx.scene.control.TextField();
 				taskEditBox.setText(taskLabel.getText());
 				detailsPane.add(taskEditBox, 1, 0);
 				taskEditBox.selectAll();
 				taskEditBox.requestFocus();
-				
-				// Set Focus lost Event				
+
+				// Set Focus lost Event
 				taskEditBox.setOnMouseClicked(new EventHandler<MouseEvent>() {
 
 					@Override
 					public void handle(MouseEvent event) {
 						// Remove Text Field
 						detailsPane.getChildren().remove(taskEditBox);
-						
-//						toDoTaskManager.updateTaskName(activeTask, taskEditBox);
-						
+
+						// toDoTaskManager.updateTaskName(activeTask, taskEditBox);
+
 						// Add new Label
 						taskLabel.setText(taskEditBox.getText());
-						detailsPane.add(taskLabel, 1, 0);							
+						detailsPane.add(taskLabel, 1, 0);
 					}
 				});
 			}
-		});		
+		});
 	}
 
 	/**
@@ -157,12 +151,11 @@ public class GuiController implements Initializable {
 		priorityLabel.setText(nullFilter(task.getPriority()));
 		detailsLabel.setText(nullFilter(task.getDetails()));
 	}
-	
+
 	private String nullFilter(Object obj) {
 		if (obj != null && obj.toString() != null && !obj.toString().isEmpty()) {
 			return obj.toString();
-		}
-		else {
+		} else {
 			return "N/A";
 		}
 	}
